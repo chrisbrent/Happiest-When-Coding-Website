@@ -1,0 +1,45 @@
+.container > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2em;
+}
+
+html, body {
+    box-sizing: border-box;
+    background: linear-gradient(
+      rgba(76, 74, 73, 0.70),
+      rgba(76, 74, 73, 0.70)
+    ),
+     url('/img/bench.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+    padding: 10px;
+    margin: 0px;
+}
+
+a,
+a:visited,
+a:focus,
+a:active,
+a:hover {
+  text-decoration: none;
+  outline: none;
+}
+a {
+  font-weight: 600;
+  color: #fff;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  cursor: poitner;
+}
+
+h2 {
+  background-color: #f08c00;
+  color: #fff;
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}

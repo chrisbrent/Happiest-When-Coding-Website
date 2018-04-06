@@ -1,0 +1,15 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<article class="content">
+  <p>
+    A repository of the various skills I've built up over the years. From writing software, to designing kites, to 3D printing UAV  s.
+  </p>
+  <p>
+    There are interesting projects listed on the <a href="protfolio.html">portfolio</a> page. You can learn more about me <a href="about.html">here</a>.
+  </p>
+  <p>
+    I'm available to work on a contract basis on any functional prototype projects you might have. You can contact my using <a href="contact.html">this page</a>.
+  </p>
+</article>
+{% endblock %}

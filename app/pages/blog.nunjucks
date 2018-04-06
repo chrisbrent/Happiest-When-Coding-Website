@@ -1,0 +1,9 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+          <article class="content">
+            <p>
+              This should redirect to the blog.
+            </p>
+          </article>
+{% endblock %}

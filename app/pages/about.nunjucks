@@ -1,0 +1,9 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<article class="content">
+  <p>
+    Here's a page about me. It's great
+  </p>
+</article>
+{% endblock %}

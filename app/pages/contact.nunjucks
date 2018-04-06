@@ -1,0 +1,10 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+<article class="content">
+  <p>
+    You can contact me via this form:
+
+  </p>
+</article>
+{% endblock %}
