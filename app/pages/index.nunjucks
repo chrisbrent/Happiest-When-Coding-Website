@@ -9,7 +9,7 @@
     There are interesting projects listed on the <a href="protfolio.html">portfolio</a> page. You can learn more about me <a href="about.html">here</a>.
   </p>
   <p>
-    I'm available to work on a contract basis on any functional prototype projects you might have. You can contact my using <a href="contact.html">this page</a>.
+    I'm available to work on a contract basis on any functional prototype projects you might have. You can contact me using <a href="contact.html">this page</a>.
   </p>
 </article>
 {% endblock %}

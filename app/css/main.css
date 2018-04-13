@@ -99,3 +99,10 @@ nav ul {
   cursor: poitner;
   text-decoration: underline;
 }
+
+.icon{
+  width:40px;
+  margin-right: .5em;
+  margin-bottom: 5px;
+  vertical-align: middle;
+}

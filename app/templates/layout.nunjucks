@@ -1,15 +1,17 @@
 <html>
     <head>
-      <!--build:css css/styles.min.css-->
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <!--build:css /css/styles.min.css-->
       <link rel="stylesheet" href="/css/normalize.css">
       <link rel="stylesheet" href="/css/main.css">
       <link rel="stylesheet" href="/css/basic.css">
       <link rel="stylesheet" href="/css/listing.css">
+      <link rel="stylesheet" href="/css/article.css">
       <!--endbuild-->
     </head>
     <body>
         <div class="container">
-          <header class="header">Happiest When...</header>
+          <header class="header">Happiest When Building</header>
           {% include "partials/nav.nunjucks" %}
           {% block content %} {%endblock%}
           <footer class="footer">

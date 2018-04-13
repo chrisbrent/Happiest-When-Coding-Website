@@ -1,22 +1,24 @@
 <html>
     <head>
-      <!--build:css css/styles.min.css-->
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+      <!--build:css /css/styles.min.css-->
       <link rel="stylesheet" href="/css/normalize.css">
       <link rel="stylesheet" href="/css/main.css">
       <link rel="stylesheet" href="/css/basic.css">
       <link rel="stylesheet" href="/css/listing.css">
+      <link rel="stylesheet" href="/css/article.css">
       <!--endbuild-->
     </head>
     <body>
         <div class="container">
-          <header class="header">Happiest When...</header>
+          <header class="header">Happiest When Building</header>
           <nav class="main-nav">
   <ul>
-    <li><a href="index.html">HOME</a></li>
-    <li><a href="portfolio.html">PORTFOLIO</a></li>
-    <li><a href="about.html">ABOUT</a></li>
-    <li><a href="blog.html">BLOG</a></li>
-    <li><a href="contact.html">CONTACT</a><li>
+    <li><a href="/index.html">HOME</a></li>
+    <li><a href="/portfolio.html">PORTFOLIO</a></li>
+    <li><a href="/about.html">ABOUT US</a></li>
+    <li><a href="/blog.html">BLOG</a></li>
+    <li><a href="/contact.html">CONTACT</a><li>
   </ul>
 </nav>
 
@@ -29,14 +31,39 @@
       <p>
         In April of 2016 I had the opportunity to revist an almost forgetten project from 2009. Sometime in 2008, probably in an issue of Make Magazine, I'd seen an article about quadcopters. The term drone was still associated with military unmanned arieal
         vehicles (UAV's). It captured my imagination, and along with my newly purchased Arduino, I figured I had all the skills need to build one. Commerically available multirotor's (multirotor being the generic term for aircraft utilizing counter rotating
-        props for control authority) were few and far between and expensive. This combined with the trickle down of cheap electronic sensors from the mobile phone revolution meant that the time for home building was ripe. Real life interviend and I had a
+        props for control authority) were few and far between, and expensive. This combined with the trickle down of cheap electronic sensors from the mobile phone revolution meant that the time for home building was ripe. Real life interviend and I had a
         pile of parts and frame that I'd fiberglassed together out of some carbon rods, five minute epoxy and some 10oz glass from West Marine.
       </p>
+      <div class="article-image">
+        <img src="/img/QuadCopter_V0.jpg" alt="Quadcopter Version 0"/>
+      </div>
       <p>
-        Come 2016 the quadcopter landscape had change dramatically. Commerical quadcopters, hexacopters and octocopters were available, although they were now called drones. Home building has move away from camera rigs and more towards "mini quads", 5"
+        Come 2016 the quadcopter landscape had change dramatically. Commerical quadcopters, hexacopters and octocopters were available, although they were now called drones. Home building has moved away from camera rigs and more towards "mini quads", 5"
         proppeller driven carbon race machines. Flight controllers had evolved beyond belief, gone were Arduino sheilds with their puny 16 bit Atmels. They'd been replaced by 32 micro processors running highly tuned and developed flight controller code.
         These controllers now cost the same, if not less, than the Arduino boards that they'd evolved from!
       </p>
+      <div class="article-image">
+        <img src="/img/QuadCopter_V0.1.jpg" alt="Quadcopter Version 0"/>
+      </div>
+      <p>
+        The quadcopter now had a Naze32 flight controller running a firmware called Cleanflight. I'd tried to make this as inexpensively as possible, and so skipped things like a barometer and GPS.
+        Unfortunately Cleanflight had been optimized for the now popular "mini quad". These small, light weight, high powered quadcopters with 5" props were usually flown without any auto leveling, and so I never really got my bigger quadcopter to fly that well using them.
+        That's not to say it's not possible, but at that stage it seemed prudent to move onto a slight higher powered Pixfalcon.
+        This also gave me a baromter and GPS for more automated flying, as well as a telemetry radio for real time updates on flights to a tablet.
+      </p>
+      <div class="article-image">
+        <img src="/img/QuadCopter_Testing.jpg" alt="Quadcopter Version 0"/>
+      </div>
+      <p>
+        I was also finally able to use 3D printing for something functional!
+        Autodesk had released some CAD Software called Fusion 360.
+        It was free for hobbiest and had a huge community with YouTube tutorials, forums etc.
+        At last the digital fabrication loop was complete, you could go from idea to 3D design to printed part in hours.
+        Which enables rapid cycles of testing, optimizing and refining.
+      </p>
+      <div class="article-image">
+        <img src="/img/QuadCopter_CenterPods.jpg" alt="Quadcopter Version 0"/>
+      </div>
     </div>
   </article>
 

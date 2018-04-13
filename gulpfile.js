@@ -7,6 +7,8 @@ var gulpIf = require('gulp-if');
 var cssnano = require('gulp-cssnano');
 var useref = require('gulp-useref');
 var imagemin = require('gulp-imagemin');
+var rsync = require('gulp-rsync')
+var settings = require("./settings.js")
 
 gulp.task('browserSync', function() {
   console.log('Starting browserSync');
@@ -24,7 +26,16 @@ gulp.task('default', defaultTask);
 gulp.task('userefTask', userefTask);
 gulp.task('imageTask', imageTask);
 gulp.task('watch', gulp.series('browserSync'));
-gulp.task('buildTask', gulp.series('nunjucksTask', 'userefTask', 'imageTask'));
+gulp.task('build', gulp.series('nunjucksTask', 'userefTask', 'imageTask'));
+gulp.task('deploy', function() {
+  return gulp.src('dist/**')
+    .pipe(rsync({
+      root:'dist',
+      hostname: settings.rsync.hostname,
+      destination: settings.rsync.destination,
+      username: settings.rsync.username
+    }));
+});
 
 function watchTask(done){
   gulp.watch(['app/css/*.css', 'app/**/*.nunjucks'], nunjucksTask);
@@ -32,8 +43,8 @@ function watchTask(done){
 }
 
 function userefTask(done){
-  return gulp.src('app/*.html')
-    .pipe(useref())
+  return gulp.src('./app/**/*.html')
+    .pipe(useref({searchPath:['./','app']}))
     .pipe(gulpIf('*.js', uglify()))
     // Minifies only if it's a CSS file
     .pipe(gulpIf('*.css', cssnano()))

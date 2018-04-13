@@ -15,6 +15,7 @@
     "gulp-if": "^2.0.2",
     "gulp-imagemin": "^4.1.0",
     "gulp-nunjucks-render": "^2.2.2",
+    "gulp-rsync": "0.0.8",
     "gulp-uglify": "^3.0.0",
     "gulp-useref": "^3.1.5"
   }

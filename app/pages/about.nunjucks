@@ -2,8 +2,38 @@
 
 {% block content %}
 <article class="content">
+  <h1>Chris Brent</h1>
   <p>
-    Here's a page about me. It's great
+    Born to an English Father, Swiss Mother and growing up in England and Australia, Chris has been called the "United Nations".
+    After studying Econimics and Majoring in computer science, Chris moved to Sydney and work as a UNIX Systems Administrator for several years.
+    He then pursued his passion for flying things and moved to New Zealand to work for renowed kite maker <a href="http://peterlynnkites.com">Peter Lynn</a>.
+    Originally palnning a three month internship he ended up saying six years, during which he deisgned several models of kite boarding kites including the F-Arc.
+    He also did a stint in the Underground kite board factory, learning the carbon lamination game.
+  </p>
+  <p>
+    Pivoting back to the tech world, Chris returned to Sydney and worked at a digital agency specializing in mobile web and app development.
+    That brought him to San Francisco in 2008.
+    In 2016 he took a sabatical to again make flying things, this time in the form of "drones".
+  </p>
+  <p>
+    He is married to the amazing Catherine and had two wonderful daughters Edith and Annabel.
+  </p>
+  <p>
+    Hare are some ways you can connect with me:
+    <ul>
+      <li>
+        <img src="/img/icon_linkedin.png"class="icon"/><a href="https://www.linkedin.com/in/chris-brent-1804a62">Linkedin</a>
+      </li>
+      <li>
+        <img src="/img/icon_instagram.png"class="icon"/><a href="https://www.instagram.com/happiestwhencoding/">Instagram</a>
+      </li>
+      <li>
+        <img src="/img/icon_facebook.svg"class="icon"/><a href="https://www.facebook.com/chris.brent">Facebook</a>
+      </li>
+      <li>
+        <img src="/img/icon_twitter.svg"class="icon"/><a href="https://twitter.com/ozchrisbin">Twitter</a>
+      </li>
+    </ul>
   </p>
 </article>
 {% endblock %}
