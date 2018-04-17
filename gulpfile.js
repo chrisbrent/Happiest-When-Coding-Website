@@ -10,6 +10,7 @@ var imagemin = require('gulp-imagemin');
 var rsync = require('gulp-rsync')
 var bump = require('gulp-bump');
 var git = require('gulp-git');
+var fs = require('fs');
 
 var settings = require('./config.json');
 
@@ -57,7 +58,7 @@ gulp.task('create-new-tag', function (cb) {
 gulp.task('commit-changes', function () {
   return gulp.src('.')
     .pipe(git.add())
-    .pipe(git.commit('[Prerelease] Bumped version number'));
+    .pipe(git.commit('[RELEASE] Bumped version number'));
 });
 
 gulp.task('push-changes', function (cb) {
