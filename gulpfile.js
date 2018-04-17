@@ -65,21 +65,13 @@ gulp.task('push-changes', function (cb) {
   git.push('origin', 'master', cb);
 });
 
-gulp.task('release', function (callback) {
+gulp.task('release',
   gulp.series(
     'bump-version',
     'commit-changes',
     'push-changes',
-    'create-new-tag',
-    function (error) {
-      if (error) {
-        console.log(error.message);
-      } else {
-        console.log('RELEASE FINISHED SUCCESSFULLY');
-      }
-      callback(error);
-    })(callback);
-});
+    'create-new-tag'
+));
 
 function buildTask(done){
   return gulp.series('nunjucksTask', 'userefTask', 'imageTask')(done);
