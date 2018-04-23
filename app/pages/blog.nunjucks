@@ -1,9 +1,17 @@
 {% extends "layout.nunjucks" %}
 
 {% block content %}
-          <article class="content">
-            <p>
-              This should redirect to the blog.
-            </p>
-          </article>
+  <article class="content">
+    <ul class="listing">
+      <li>
+        <h2>Piedmont Maker Faire 2018</h2>
+        <div class="body">
+          <p>Displaying the "Digital Fabritorium" at the Piedmont Maker Faire.</p>
+        </div>
+        <div class="cta">
+          <a href="blog/piedmont_maker_faire_2018.html">Read more...</a>
+        </div>
+      </li>
+    </ul>
+  </article>
 {% endblock %}
