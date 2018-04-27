@@ -11,6 +11,7 @@ var rsync = require('gulp-rsync')
 var bump = require('gulp-bump');
 var git = require('gulp-git');
 var fs = require('fs');
+var del = require('del');
 
 var settings = require('./config.json');
 
@@ -28,6 +29,7 @@ gulp.task('nunjucksTask', nunjucksTask);
 gulp.task('default', defaultTask);
 gulp.task('userefTask', userefTask);
 gulp.task('imageTask', imageTask);
+gulp.task('clean', cleanTask);
 gulp.task('watch', gulp.series('browserSync'));
 gulp.task('build', buildTask);
 gulp.task('rsync', rsyncTask);
@@ -67,7 +69,7 @@ gulp.task('push-changes', function (cb) {
 });
 
 function buildTask(done){
-  return gulp.series('nunjucksTask', 'userefTask', 'imageTask')(done);
+  return gulp.series('clean', 'nunjucksTask', 'userefTask', 'imageTask')(done);
 }
 
 function releaseTask(done){
@@ -88,6 +90,10 @@ function rsyncTask(done) {
       destination: settings.rsync.destination,
       username: settings.rsync.username
     }));
+}
+
+function cleanTask(done){
+  return del(['dist/**/*']);
 }
 
 function watchTask(done){
