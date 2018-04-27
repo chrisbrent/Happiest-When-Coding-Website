@@ -31,7 +31,8 @@ gulp.task('imageTask', imageTask);
 gulp.task('watch', gulp.series('browserSync'));
 gulp.task('build', buildTask);
 gulp.task('rsync', rsyncTask);
-gulp.task('deploy', gulp.series('build', 'rsync'));
+gulp.task('release', releaseTask);
+gulp.task('deploy', gulp.series('build', 'release', 'rsync'));
 
 gulp.task('bump-version', function () {
   return gulp.src(['./package.json'])
@@ -65,16 +66,17 @@ gulp.task('push-changes', function (cb) {
   git.push('origin', 'master', cb);
 });
 
-gulp.task('release',
+function buildTask(done){
+  return gulp.series('nunjucksTask', 'userefTask', 'imageTask')(done);
+}
+
+function releaseTask(done){
   gulp.series(
     'bump-version',
     'commit-changes',
     'push-changes',
     'create-new-tag'
-));
-
-function buildTask(done){
-  return gulp.series('nunjucksTask', 'userefTask', 'imageTask')(done);
+  );
 }
 
 function rsyncTask(done) {

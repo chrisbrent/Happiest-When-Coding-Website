@@ -1,0 +1,7 @@
+{
+  "rsync" :{
+      "hostname" : "",
+      "username" : "",
+      "destination" : ""
+  }
+}

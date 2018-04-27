@@ -1,0 +1,12 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <article class="content">
+    <h2>Android Apps</h2>
+    <div class="article-summary">Software: Android Studio/Java, HTML</div>
+    <div class="article-body">
+      <p>
+      </p>
+    </div>
+  </article>
+{% endblock %}
