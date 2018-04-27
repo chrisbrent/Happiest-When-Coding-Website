@@ -1,0 +1,83 @@
+<html>
+  <head>
+    
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-118029628-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag('js', new Date());
+
+      gtag('config', 'UA-118029628-1');
+    </script>
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!--build:css /css/styles.min.css-->
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/basic.css">
+    <link rel="stylesheet" href="/css/listing.css">
+    <link rel="stylesheet" href="/css/article.css">
+    <!--endbuild-->
+    
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">Happiest When Building</header>
+      <nav class="main-nav">
+  <ul>
+    <li><a href="/index.html">HOME</a></li>
+    <li><a href="/portfolio.html">PORTFOLIO</a></li>
+    <li><a href="/about.html">ABOUT US</a></li>
+    <li><a href="/blog.html">BLOG</a></li>
+    <li><a href="/contact.html">CONTACT</a><li>
+  </ul>
+</nav>
+
+      
+  <article class="content">
+    <h2>Ring Wing</h2>
+    <div class="article-summary">Tools used: 3D printing, soldering station, various hand tools</div>
+    <div class="article-summary">Software: Fusion 360, Ardupilot.</div>
+    <div class="article-body">
+      <p>
+        I was approached by my friend Pete Lynn to build one of his "Ring Wings".
+        A novel deisgn that looks like a multirotor on the groud, but flys something like a wing when pitched forward, I was excited to try and put my spin on it.
+        After building it the same way that Pete had orginally done pervious version, with a laser cut foam section covered with packing tape, I decided to try and 3D print the airfoil sections.
+      </p>
+      <div class="article-image">
+        <img src="/img/RingWingDesign.png" alt="Ring Wing Design"/>
+      </div>
+      <p>
+        3D printing planes, on the face of it, seems like a bad idea.
+        They should be too heavy, too fragile and too hard to print.
+        Then <a href="https://3dlabprint.com/">3D LabPrint</a> proved us all wrong and made some amazing planes.
+        Following their lead I took the airfoil Pete had designed and imported into Fusion 360.
+        I started by extruding a revolved solid, and just let Simplify 3D do the infill.
+        While this worked okay, the resulting wing wasn't really stiff enough.
+        After shelling the part, and working out how to add box sections along the span I had somthing that I was happy with.
+        I'm used to printing in PETG, but for this project that was a little too much weight so I swithced out to PLA.
+      </p>
+      <div class="article-image">
+        <img src="/img/RingWingPrinting.jpg" alt="Ring Wing Printing"/>
+      </div>
+      <p>
+        The final airframe was sixteen spanwise sections glued together, with one section being specifc to mounting the flight controller.
+        It flew well, although it was a lot heavier than the original.
+        Unfortunately the frame that the PLA was glued to was now the weak point and a heavy "landing" made for a spectacular failure of that component.
+        A rebuild using a carbon frame is planed.
+      </p>
+      <div class="article-image">
+        <img src="/img/RingWingAssembly.jpg" alt="Ring Wing Assembly"/>
+      </div>
+    </div>
+  </article>
+
+        <footer class="footer">
+          <div>&copy; 2018 Happiest When Coding, LLC.</div>
+        </footer>
+      </div>
+    </body>
+  </html>

@@ -3,7 +3,7 @@
 {% block content %}
   <article class="content">
     <h2>3D Printed Multirotor</h2>
-    <div class="article-summary">Tools used: 3D print, soldering station, various hand tools</div>
+    <div class="article-summary">Tools used: 3D printing, soldering station, various hand tools</div>
     <div class="article-summary">Software: Fusion 360, PX4.</div>
     <div class="article-body">
       <p>

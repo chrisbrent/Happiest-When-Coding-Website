@@ -1,0 +1,12 @@
+{% extends "layout.nunjucks" %}
+
+{% block content %}
+  <article class="content">
+    <h2>3D Design Patterns</h2>
+    <div class="article-summary">Software: Fusion 360</div>
+    <div class="article-body">
+      <p>
+      </p>
+    </div>
+  </article>
+{% endblock %}
