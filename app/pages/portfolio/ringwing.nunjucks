@@ -8,8 +8,8 @@
     <div class="article-body">
       <p>
         I was approached by my friend, Pete Lynn, to build one of his "Ring Wings".
-        It's a novel deisgn that looks like a multirotor on the groud, but flys something like a wing when pitched forward, I was excited to try and put my spin on it.
-        After building it the same way that Pete had orginally done pervious version, with a laser cut foam section covered with packing tape, I decided to try and 3D print the airfoil sections.
+        It's a novel design that looks like a multi-rotor on the ground, but fly's something like a wing when pitched forward, I was excited to try and put my spin on it.
+        After building it the same way that Pete had originally done pervious version, with a laser cut foam section covered with packing tape, I decided to try and 3D print the airfoil sections.
       </p>
       <div class="article-image">
         <img src="/img/RingWingDesign.png" alt="Ring Wing Design"/>
@@ -21,14 +21,14 @@
         Following their lead I took the airfoil Pete had designed and imported into Fusion 360.
         I started by extruding a revolved solid, and just let Simplify 3D do the infill.
         While this worked okay, the resulting wing wasn't really stiff enough.
-        After shelling the part, and working out how to add box sections along the span I had somthing that I was happy with.
-        I'm used to printing in PETG, but for this project that was a little too much weight so I swithced out to PLA.
+        After shelling the part, and working out how to add box sections along the span I had something that I was happy with.
+        I'm used to printing in PETG, but for this project that was a little too much weight so I switched out to PLA.
       </p>
       <div class="article-image">
         <img src="/img/RingWingPrinting.jpg" alt="Ring Wing Printing"/>
       </div>
       <p>
-        The final airframe was sixteen spanwise sections glued together, with one section being specifc to mounting the flight controller.
+        The final airframe was sixteen span-wise sections glued together, with one section being specific to mounting the flight controller.
         It flew well, although it was a lot heavier than the original.
         Unfortunately the frame that the PLA was glued to was now the weak point and a heavy "landing" made for a spectacular failure of that component.
         A rebuild using a carbon frame is planed.

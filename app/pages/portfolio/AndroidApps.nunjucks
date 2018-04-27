@@ -3,9 +3,25 @@
 {% block content %}
   <article class="content">
     <h2>Android Apps</h2>
-    <div class="article-summary">Software: Android Studio/Java, HTML</div>
+    <div class="article-summary">Software: Android Studio/Java, XCode/Objective C, C#/.Net, Javascript, HTML</div>
     <div class="article-body">
+      <h4>Jo-Ann Fabric &amp; Craft</h4>
       <p>
+        Jo-Ann stores were the first client to use a product we'd named "RedShop Mobile".
+        RedShop Mobile was a collection of tools aimed at building mobile apps and websites for eCommerce clients who didn't have the techinal team to implement their own.
+        This usually meant that a client had few to no techinal resources and generally no availible product listing API.
+        By running a cluster of headless <a href="https://www.seleniumhq.org/">Selenium</a> browsers we were able to parse a website once a day for an up to date product listing.
+        This was stored in a SQL Sever database and served to the Android, iOS and mobile website.
+      </p>
+      <p>
+        For Jo-Ann we also integrated a store locator provided via CSV file, and a weekly mailer from a third party vendor.
+        We also expanded RedShop Mobile to include a mobile wallet for storing coupons as well as an admin UI for adding those coupons.
+      </p>
+      <p>
+        My inital role was to write the parser to get a minimum viable product API, and build a prototype iOS app.
+        I assisted in building the prototype Android app.
+        Once the project was accepted by the client we built out all the required functionally for both iOS and Android.
+        At that point a large offshore team was engaged for ongoing feature requests and maaintenance.
       </p>
     </div>
   </article>
