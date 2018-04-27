@@ -1,7 +1,7 @@
 {
   "rsync" :{
-      "hostname" : "maker1.happiestwhencoding.com",
-      "username" : "chris",
-      "destination" : "/usr/share/nginx/happiestwhencoding.com"
+      "hostname" : "",
+      "username" : "",
+      "destination" : ""
   }
 }
