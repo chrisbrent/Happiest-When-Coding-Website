@@ -76,7 +76,7 @@ function releaseTask(done){
     'commit-changes',
     'push-changes',
     'create-new-tag'
-  );
+  )(done);
 }
 
 function rsyncTask(done) {
