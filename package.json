@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "Happiest When Coding, LLC. Website",
   "main": "index.js",
   "scripts": {
